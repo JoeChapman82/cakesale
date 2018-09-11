@@ -1,0 +1,7 @@
+.home-screen-grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow-y: scroll;
+}

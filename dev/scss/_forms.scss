@@ -1,0 +1,57 @@
+label {
+    font-size: $font-size-large;
+    margin-bottom: .4rem;
+}
+
+input[type='text'],
+input[type='password'] {
+    padding: .25rem;
+    font-size: $font-size-medium;
+    font-family: cursive;
+    margin-bottom: 1rem;
+    border: 1px solid $pink;
+    box-shadow: inset 2px 2px 2px $pink-opaque;
+    text-align: center;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+    outline: 3px solid $deep-pink-opaque;
+}
+
+input[type='submit'] {
+    margin-top: .5rem;
+    font-size: $font-size-medium;
+    font-family: cursive;
+    padding: .35rem;
+    background: $mellow-yellow repeating-linear-gradient(to bottom, $mellow-yellow-opaque, $pink-opaque 10px, $pink-opaque 10px, $mellow-yellow-opaque 20px);
+    box-shadow: 2px 2px 2px $black-opaque;
+    border-radius: 50px;
+}
+
+input[type='submit']:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px $deep-pink-opaque, 5px 5px 5px $black-opaque;
+}
+
+input[type='submit']:active {
+    outline: 0;
+    box-shadow: 0 0 0 3px $deep-pink-opaque;
+}
+
+input[type='submit']:hover {
+    cursor: pointer;
+}
+
+.centered-input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.centered-input-small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}

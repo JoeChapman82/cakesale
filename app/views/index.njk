@@ -1,0 +1,28 @@
+{% extends "nunjucks/templates/layout.njk" %}
+
+{% block page_title %}Index{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <div class="home-screen-grid-container">
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child">
+            <h1 class="xlarge-heading centred-text">Cakes sold</h1>
+            <p class="xlarge-heading centred-text">{{ totalCakes }}</p>
+        </div>
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child"></div>
+        <div class="home-screen-child"></div>
+    </div>
+
+    <a class="login-link" href="/login">Login</a>
+
+
+</div>
+
+{% endblock %}

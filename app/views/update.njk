@@ -1,0 +1,19 @@
+{% extends "nunjucks/templates/layout.njk" %}
+
+{% block page_title %}Update{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <div class="container-center-top">
+        <form class="" action="/update" method="post">
+            <p class="xlarge-heading centred-text">Toal cakes sold: {{ totalCakes }}</p>
+            <input type="hidden" name="_csrf" value="{{ _csrf }}">
+            <input type="submit" class="centered-input-small" name="submit" value="Sell cake">
+        </form>
+
+    </div>
+</div>
+
+
+{% endblock %}

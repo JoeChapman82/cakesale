@@ -1,0 +1,23 @@
+.login-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: $font-size-medium;
+    font-family: cursive;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: 2px solid $pink;
+    background: $mellow-yellow repeating-linear-gradient(to bottom, $mellow-yellow-opaque, $pink-opaque 10px, $pink-opaque 10px, $mellow-yellow-opaque 20px);
+    box-shadow: 2px 2px 2px $black-opaque;
+    border-radius: 50px;
+}
+
+.login-link:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px $deep-pink-opaque, 5px 5px 5px $black-opaque;
+}
+
+.login-link:active {
+    outline: 0;
+    box-shadow: 0 0 0 3px $deep-pink-opaque;
+}

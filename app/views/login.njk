@@ -1,0 +1,28 @@
+{% extends "nunjucks/templates/layout.njk" %}
+
+{% block page_title %}Login{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <div class="container-center-top">
+        <div class="login-wrapper">
+            <form class="" action="/login" method="post">
+                <h1 class="xlarge-heading">Menu</h1>
+                <div class="">
+                    <label class="block" for="location">Location</label>
+                    <input class="block centered-input" id="location" type="text" name="location" value="">
+                </div>
+                <div class="">
+                    <label class="block" for="password">Password</label>
+                    <input class="block centered-input" id="password" type="password" name="password" value="">
+                </div>
+                <input type="hidden" name="_csrf" value="{{ _csrf }}">
+                <input type="submit" class="centered-input-small" name="submit" value="Enter">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+image {
+    max-width: 100%;
+}
+
+.sadcake {
+    width: 25%;
+    height: auto;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+
+.taz {
+    width: 25%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and(max-width: 700px) {
+    .sadcake {
+        width: 50%;
+        margin: 0;
+    }
+
+    .taz {
+        width: 50%;
+    }
+}
